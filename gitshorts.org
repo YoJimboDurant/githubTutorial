@@ -21,6 +21,23 @@ git commit -a -m "my message" <- stage and commit
 
 git status -s <- tell you what has been modified in shorthand 
 
+* Notes on Using git with Emacs
+
+- Emacs loves to create backup files. For this, we need to create a
+  .gitignore_global file in home directory, then edit it to include:
+
+# Ignore Emacs backups
+
+*.~*~ 
+
+
+save, close, then add it to .gitconfig
+
+  with:
+
+git config --global core.excludesfile ~/.gitignore_global
+
+ 
 * GitHub Notes
  *Make sure site is secure - look for https is secure connection* 
 - Create opensource account (will be free but everyone will be able to
@@ -53,6 +70,10 @@ look at and download data/code)
    I. To test this type: ssh -T git@github.com. Confirm, and enter
    your password for your ssh you created.
 
+2. create connection and push
+
+- git remote add origin (get ssh from github repository)
+- git push origin master  <- pushed master branch to origin (github)
 
 
 * Useful websites
