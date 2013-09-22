@@ -1,0 +1,22 @@
+* YoJimbo's Git Cheat Sheet
+
+* Git initial commands:
+git init <project> <- get working directory to 
+git add . <- add all files into staging
+git commit -m "message" <- commit (take snapshot of current project) 
+
+* Git working commands:
+git status <- status of files
+git log <- commit history
+git diff <- view differences
+git diff --cached <- differences in staging
+
+* Git Shortcuts
+git log --oneline   <- all comits with just message (no hash or
+author)
+
+git status <- status of files
+
+git commit -a -m "my message" <- stage and commit
+
+git status -s <- tell you what has been modified in shorthand 
