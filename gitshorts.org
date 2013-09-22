@@ -20,3 +20,45 @@ git status <- status of files
 git commit -a -m "my message" <- stage and commit
 
 git status -s <- tell you what has been modified in shorthand 
+
+* GitHub Notes
+ *Make sure site is secure - look for https is secure connection* 
+- Create opensource account (will be free but everyone will be able to
+look at and download data/code)
+- Use professional sounding name
+- Strong password
+- You can setup a SSH key to get computer trusted
+- Organizations can be used to set up teams (if multiple people are
+  working on the same thing)
+- Pull requests show if people have cloned or forked - and are
+  requested a merge.
+- Wiki has information about the project
+- Graphs/issues/etc
+- Deploy Key is SSH key stored on server that allows server to have
+  access to repository.
+** Social aspect of gitHub 
+- can follow friends and /vice-a-versa/
+- watch projects
+
+** upload to GitHub
+1. create SSH Key (public/private)
+   A. Start -> UserName (got to personal folder)
+   B. look for .ssh folder - *backup if there!*
+   C. open gitbash
+   D. ssh-keygen -t rsa -C "emailaddress" (hit enter twice)
+   E. Create key phrase
+   F. in .ssh open id_rsa.pub, open with text editor (Windows thinks
+   this is a MS Publishing file so lookout!),  and copy/paste code to GitHub
+   G. Have ssh key in gitHub and private key on PC.
+   I. To test this type: ssh -T git@github.com. Confirm, and enter
+   your password for your ssh you created.
+
+
+
+* Useful websites
+
+** Youtube videos
+*** 308tube tutorial
+- http://www.youtube.com/watch?v=mYjZtU1-u9Y
+- http://www.youtube.com/watch?v=8r_IErxmoUc
+- 
