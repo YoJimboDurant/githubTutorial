@@ -1,35 +1,29 @@
 * YoJimbo's Git Cheat Sheet
 
-* Git initial commands:
-git init <project> <- get working directory to 
-git add . <- add all files into staging
-git commit -m "message" <- commit (take snapshot of current project) 
+* Git Bash Commands:
+|Command | Function|
+------------------
+|git init <project> |get working directory to initialize| 
+|git add . |add all files into staging|
+|git commit -m "message" |commit (take snapshot of current project)| 
+|git status |status of files|
+|git status -s | shorthand status
+|git log |commit history|
+|git log --oneline | all commits with short message|
+|git diff |view differences|
+|git diff --cached |differences in staging|
 
-* Git working commands:
-git status <- status of files
-git log <- commit history
-git diff <- view differences
-git diff --cached <- differences in staging
-
-* Git Shortcuts
-git log --oneline   <- all comits with just message (no hash or
-author)
-
-git status <- status of files
-
-git commit -a -m "my message" <- stage and commit
-
-git status -s <- tell you what has been modified in shorthand 
 
 * Notes on Using git with Emacs
 
 - Emacs loves to create backup files. For this, we need to create a
   .gitignore_global file in home directory, then edit it to include:
-
+#+
 # Ignore Emacs backups
 
 *.~*~ 
 
+#+
 
 save, close, then add it to .gitconfig
 
@@ -59,15 +53,15 @@ look at and download data/code)
 
 ** upload to GitHub
 1. create SSH Key (public/private)
-   A. Start -> UserName (got to personal folder)
-   B. look for .ssh folder - *backup if there!*
-   C. open gitbash
-   D. ssh-keygen -t rsa -C "emailaddress" (hit enter twice)
-   E. Create key phrase
-   F. in .ssh open id_rsa.pub, open with text editor (Windows thinks
+   - Start -> UserName (got to personal folder)
+   - look for .ssh folder - *backup if there!*
+   - open gitbash
+   - ssh-keygen -t rsa -C "emailaddress" (hit enter twice)
+   - Create key phrase
+   - in .ssh open id_rsa.pub, open with text editor (Windows thinks
    this is a MS Publishing file so lookout!),  and copy/paste code to GitHub
-   G. Have ssh key in gitHub and private key on PC.
-   I. To test this type: ssh -T git@github.com. Confirm, and enter
+   - Have ssh key in gitHub and private key on PC.
+   - To test this type: ssh -T git@github.com. Confirm, and enter
    your password for your ssh you created.
 
 2. create connection and push
@@ -75,11 +69,21 @@ look at and download data/code)
 - git remote add origin (get ssh from github repository)
 - git push origin master  <- pushed master branch to origin (github)
 
-
+ 
 * Useful websites
 
 ** Youtube videos
 *** 308tube tutorial
 - http://www.youtube.com/watch?v=mYjZtU1-u9Y
 - http://www.youtube.com/watch?v=8r_IErxmoUc
-- 
+- http://www.youtube.com/watch?v=STJBFXskfCc
+
+
+
+
+
+
+
+
+
+
