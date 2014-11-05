@@ -69,7 +69,20 @@ look at and download data/code)
 - git remote add origin (get ssh from github repository)
 - git push origin master  <- pushed master branch to origin (github)
 
- 
+
+* Basic Branching
+use the -b switch to create and checkout branch:
+
+$ git checkout -b iss53
+Switched to a new branch "iss53"
+
+to checkout:
+$ git checkout iss53
+
+to merge:
+$ git checkout master
+$ git merge hotfix
+
 * Useful websites
 
 ** Youtube videos
